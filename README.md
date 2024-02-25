@@ -1,5 +1,6 @@
 ======================================================
-AGREEMENT ON THE USE OF IoM Hashing ALGORITHM AND ANY GENERATED DATA
+
+# AGREEMENT ON THE USE OF IoM Hashing ALGORITHM AND ANY GENERATED DATA
 
 I agree:
 

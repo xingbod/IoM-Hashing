@@ -1,0 +1,22 @@
+% randum = randn(299,299,300);
+load('randnum.mat');
+for i = 1:100
+    for j = 4:8
+        file = strcat(pwd, '\data\', num2str(i), '_',num2str(j),'.mat');
+        if exist(file,'file')==0
+            continue;
+        else
+            load(file);
+            vector = Ftemplate;
+        end
+        maxout_code = [];
+        for counter = 1:300
+            tmp = vector * randum(:,:,counter);
+            
+            [m ind] = max(tmp);
+            maxout_code = [maxout_code, ind];
+        end
+        file2 = strcat('C:\Users\Goi Bok Min\Desktop\fvc2002_maxout1\',num2str(i), '_',num2str(j),'.mat');
+        save(file2,'maxout');
+    end
+end
